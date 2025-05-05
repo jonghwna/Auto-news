@@ -48,7 +48,7 @@ def get_tesla_news():
     messages = [
         {
             "role": "system",
-            "content": """You are an expert news research assistant specializing in Tesla news. Your task is to:
+            "content": """You are an expert news research assistant specializing in in Tesla and Tesla related political news. Your task is to:
 1. Find the most relevant and recent news articles about Tesla
 2. Provide accurate and detailed information
 3. Format the response as a valid JSON array
@@ -61,7 +61,7 @@ def get_tesla_news():
 1. Title: The exact headline of the article
 2. Source: The name of the news organization or website
 3. URL: The direct link to the article
-4. Summary: A detailed 2-3 sentence summary of the key points
+4. Summary: A detailed 3-4 bullet point summary focusing on key financial facts, events, and context
 
 Format the response as a JSON array. Example:
 [
